@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
     path('accounts/login/', views.LoginView.as_view(), name='login'),
-    path('accounts.logout/', views.LogoutView.as_view(template_name=''), name='logout')
+    path('accounts/logout/', views.LogoutView.as_view(template_name='post_list.html'), name='logout')
 ]
